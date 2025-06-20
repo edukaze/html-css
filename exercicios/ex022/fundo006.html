@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
-
+            /*shorthand background*/
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat  fixed;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+        }
+        main >p {
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi voluptates nulla quisquam, excepturi, natus a ea fugiat deleniti voluptatum soluta. Cumque distinctio consequatur, et ducimus ad sit, totam porro explicabo ex nihil soluta asperiores molestiae non ipsa, autem illo vitae. Fugit beatae corrupti laboriosam, minus perferendis assumenda. Numquam, culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iste porro quis consequatur harum ullam nam sed, debitis possimus quidem vero voluptatibus sequi eligendi ab rerum. Placeat quo ea reprehenderit.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi voluptates nulla quisquam, excepturi, natus a ea fugiat deleniti voluptatum soluta. Cumque distinctio consequatur, et ducimus ad sit, totam porro explicabo ex nihil soluta asperiores molestiae non ipsa, autem illo vitae. Fugit beatae corrupti laboriosam, minus perferendis assumenda. Numquam, culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iste porro quis consequatur harum ullam nam sed, debitis possimus quidem vero voluptatibus sequi eligendi ab rerum. Placeat quo ea reprehenderit.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi voluptates nulla quisquam, excepturi, natus a ea fugiat deleniti voluptatum soluta. Cumque distinctio consequatur, et ducimus ad sit, totam porro explicabo ex nihil soluta asperiores molestiae non ipsa, autem illo vitae. Fugit beatae corrupti laboriosam, minus perferendis assumenda. Numquam, culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iste porro quis consequatur harum ullam nam sed, debitis possimus quidem vero voluptatibus sequi eligendi ab rerum. Placeat quo ea reprehenderit.</p>
     </main>
 </body>
