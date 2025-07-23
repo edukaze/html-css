@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+
+div#main{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 80vw;
+    font-size: 1.2em;
+    margin-top: 20px;
+
+}
+h2{
+    font-size: 1.8em;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 1.1em;
+}
+

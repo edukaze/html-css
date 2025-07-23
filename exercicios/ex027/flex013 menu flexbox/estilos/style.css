@@ -14,6 +14,10 @@ body{
     width: 100vw;
 }
 
+span#burguer{
+    display: none;
+}
+
 header{
     background-color: gray;
     color: white;
@@ -25,13 +29,13 @@ header{
 }
 
 header >h1{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
   
     flex: 0 0 200px;
-   
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.541);
 }
 header > nav{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -58,4 +62,6 @@ main{
     padding: 10px; 
     border-radius: 5px 10px;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+    font-size: 1.1em;
 }

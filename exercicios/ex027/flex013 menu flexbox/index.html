@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dehaze" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 580px)">
+    <link rel="stylesheet" href="estilos/tela-grande.css" media="screen and (min-width:992px)">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            dehaze
+        </span>
+        <nav id="itens">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -18,13 +24,27 @@
             <a href="#">Opção 6</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <article>
-                <h2>Teste Flexbox</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem, alias suscipit ullam exercitationem eaque nihil quas soluta corporis sed labore ab? A sapiente dignissimos accusamus obcaecati fugiat nostrum rerum quos iste sunt optio deserunt molestias, blanditiis corporis illo sint id consequatur soluta nobis voluptas natus nulla sit sequi? Dolorem id nostrum illo, veniam iure aliquid accusamus tempore! Ipsam quas iure modi exercitationem culpa obcaecati magni sed, fugiat sunt eos sapiente aliquid officia suscipit expedita voluptatem rerum dignissimos vel asperiores ad. Neque minima sequi, rerum laboriosam cum, dolorum veniam reiciendis quia ipsum dicta numquam quos, excepturi at officia facilis eos.</p>
-            </article>
-        </section>
-    </main>
+    <div id="main">
+        <main>
+            <section>
+                <article>
+                    <h2>Teste Flexbox</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem, alias suscipit ullam exercitationem eaque nihil quas soluta corporis sed labore ab? A sapiente dignissimos accusamus obcaecati fugiat nostrum rerum quos iste sunt optio deserunt molestias, blanditiis corporis illo sint id consequatur soluta nobis voluptas natus nulla sit sequi? Dolorem id nostrum illo, veniam iure aliquid accusamus tempore! Ipsam quas iure modi exercitationem culpa obcaecati magni sed, fugiat sunt eos sapiente aliquid officia suscipit expedita voluptatem rerum dignissimos vel asperiores ad. Neque minima sequi, rerum laboriosam cum, dolorum veniam reiciendis quia ipsum dicta numquam quos, excepturi at officia facilis eos.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa veniam recusandae assumenda inventore distinctio fugit incidunt earum, ab amet ullam commodi hic sit est minima consequuntur eveniet optio eum! Sunt voluptas accusantium dolore quasi veniam autem iusto pariatur expedita doloribus officia aliquid a architecto velit sed doloremque enim sequi vel exercitationem porro, molestias voluptatem eveniet aperiam distinctio. Asperiores consequuntur, dolorem veritatis nam a vero explicabo delectus quaerat quisquam vitae ea voluptatem perspiciatis nobis molestias sit? Minima cum saepe delectus reiciendis possimus enim magni provident asperiores omnis at a rerum aliquid deserunt doloribus nemo sapiente accusantium maiores, porro in optio quae. Iste facilis nobis laudantium amet officia quaerat, optio ipsum autem excepturi adipisci, doloribus earum dolor nesciunt maxime exercitationem delectus atque quod? Praesentium, dicta hic nam eaque consequatur odit at, quod sunt alias excepturi cumque dignissimos. Similique nam aperiam autem placeat sapiente, accusamus magni libero dolorem ab vero nisi commodi? Tempore, voluptate quibusdam! Doloremque sunt itaque aut. Minus harum consequatur nihil distinctio beatae illum obcaecati sapiente eum perferendis aperiam doloribus possimus debitis, quod quam hic necessitatibus, eveniet nisi ad? Accusamus nobis culpa eum architecto alias quam nihil iusto, esse totam qui aliquid. Magnam pariatur aperiam voluptatibus soluta suscipit, dolorum cum possimus!</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'flex'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'flex'
+            }
+        }
+
+    </script>
 </body>
 </html>

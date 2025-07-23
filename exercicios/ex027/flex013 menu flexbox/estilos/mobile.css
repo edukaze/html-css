@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*Typical device breakpoint
+-------------------------
+Pequenas telas até 600px
+Celular:600px até 768px
+Tablet:768px 992px
+desktop:992px até 1200px
+Grandes telas: acima de 1200px
+----------------------------
+ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+span#burguer{
+    background-color: black;
+    display:block;
+    margin-left: 20px;
+     border-radius: 5px 7px;
+    width: 90vw;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+span#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+header{
+    flex-flow: column nowrap;
+}
+header > nav {
+    display: none;
+}
+
+header > h1{
+    flex: 0 0 50px;
+    margin: 10px;
+}
+header > nav > a{
+    width: 90vw;
+}
